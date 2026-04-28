@@ -1,0 +1,21 @@
+[project]
+name = "ds-business-demo-template"
+version = "0.1.0"
+description = "Notebook-first template for business-oriented data science demos"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupytext",
+    "jupyter",
+    "ipykernel",
+    "datasets",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "pytest",
+]
