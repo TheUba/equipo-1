@@ -15,7 +15,7 @@ Este repositorio sirve como base para:
 
 Esta primera version del template cubre:
 
-- entorno reproducible con `pyenv` + `.python-version` + `uv`
+- entorno reproducible con `.python-version` + `uv`
 - notebooks locales con `jupyter` + `jupytext`
 - ejemplo de churn como caso de referencia
 - documentacion base del caso:
@@ -42,19 +42,60 @@ docs/        guias y documentacion metodologica de DS
 
 ## Requisitos
 
-- `pyenv`
-- Python `3.12.13`
 - `uv`
+
+## Windows + WSL 2 (Ubuntu)
+
+Si quieres trabajar en este proyecto desde una maquina con Windows, la forma recomendada es usar **WSL 2 con Ubuntu**.
+
+### 1. Instalar WSL 2 y Ubuntu
+
+Ejecuta en **PowerShell como administrador**:
+
+```bash
+wsl --install --web-download -d Ubuntu
+```
+
+Luego reinicia la PC si el sistema lo solicita.
+
+### 2. Configurar Ubuntu
+
+- Abre **Ubuntu** desde el menú de inicio.
+- Crea tu usuario y contraseña para WSL.
+
+### 3. Verificar que Ubuntu esté corriendo en WSL 2
+
+Ejecuta en **PowerShell como administrador**:
+
+```bash
+wsl -l -v
+```
+
+Verifica que **Ubuntu** tenga `2` en la columna `VERSION`.
+
+## Instalar `uv`
+
+Instala `uv` siguiendo la documentacion oficial para **Linux**:
+
+- https://github.com/astral-sh/uv#installation
+
+Para este caso, usa la opcion de **standalone installers** para **Linux**.
+
+Este paso aplica tanto si trabajas en **Linux host** como si trabajas dentro de **Ubuntu en WSL**.
+
+Si acabas de instalarlo, reinicia la terminal o recarga tu shell antes de seguir.
+
+## Entrar al proyecto desde Linux
+
+Con `uv` ya instalado, entra a la carpeta del repositorio desde tu terminal de Linux.
+
+Este paso aplica tanto para **Linux host** como para **Ubuntu en WSL**.
 
 ## Setup
 
-### 1. Instalar la version de Python si no la tenes
+La version de Python requerida esta pineada en `.python-version`; `uv` la resolvera automaticamente si hace falta.
 
-```bash
-pyenv install 3.12.13
-```
-
-### 2. Instalar dependencias del proyecto
+### 1. Sincronizar entorno y dependencias
 
 ```bash
 uv sync
@@ -65,13 +106,7 @@ uv sync
 ### Abrir notebooks con Jupyter Notebook
 
 ```bash
-uv run jupyter notebook notebooks/
-```
-
-### Abrir notebooks con JupyterLab
-
-```bash
-uv run jupyter lab
+uv run jupyter notebook notebooks/ --ServerApp.port=12001
 ```
 
 ## Flujo de trabajo recomendado
@@ -82,6 +117,34 @@ uv run jupyter lab
    - `technical-brief.md`
    - `business-narrative.md`
 4. Usar las guias de `docs/` para no empezar desde cero
+
+## Como agregar paquetes nuevos
+
+Si necesitas una dependencia que no esta en `uv.lock`, agregala con `uv add`.
+
+### Dependencia de runtime
+
+```bash
+uv add nombre-del-paquete
+```
+
+### Dependencia de desarrollo
+
+```bash
+uv add --dev nombre-del-paquete
+```
+
+Esto actualiza:
+
+- `pyproject.toml`
+- `uv.lock`
+- el entorno local `.venv`
+
+Ejemplo:
+
+```bash
+uv add plotly
+```
 
 ## Documentacion disponible
 
@@ -100,4 +163,4 @@ El template incluye un ejemplo de **prediccion de churn** como referencia inicia
 
 ## Nota sobre Jupytext
 
-Este template esta pensado para trabajo local con Jupyter/JupyterLab y Jupytext. El objetivo es tener notebooks ligeros, versionables y compatibles con un flujo serio de proyecto.
+Este template esta pensado para trabajo local con Jupyter Notebook y Jupytext. El objetivo es tener notebooks ligeros, versionables y compatibles con un flujo serio de proyecto.

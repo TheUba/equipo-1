@@ -92,7 +92,7 @@ Se priorizo el recall por sobre la precision: en churn, es mejor alertar de mas 
 
 ## Stack
 
-- Python 3.12.13 (pyenv)
+- Python 3.12.13 (uv)
 - pandas, numpy — manipulacion de datos
 - scikit-learn 1.8.0 — modelos y evaluacion
 - matplotlib, seaborn — visualizacion
