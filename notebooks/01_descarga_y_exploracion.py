@@ -46,6 +46,71 @@ df.info()
 df.describe()
 
 # %% [markdown]
+# ## Descripcion breve de columnas
+#
+# Antes de explorar distribuciones, conviene tener un mapa rapido de que
+# representa cada columna del dataset.
+
+# %%
+column_descriptions = [
+    ("Age", "Edad del cliente."),
+    ("Avg Monthly GB Download", "Promedio mensual de GB descargados."),
+    ("Avg Monthly Long Distance Charges", "Promedio mensual de cargos por larga distancia."),
+    ("Churn", "Etiqueta objetivo: 1 si el cliente abandono, 0 si no."),
+    ("Churn Category", "Categoria general del motivo de churn."),
+    ("Churn Reason", "Motivo especifico del churn."),
+    ("Churn Score", "Score asociado al riesgo o resultado de churn."),
+    ("City", "Ciudad del cliente."),
+    ("CLTV", "Customer Lifetime Value estimado del cliente."),
+    ("Contract", "Tipo de contrato del servicio."),
+    ("Country", "Pais del cliente."),
+    ("Customer ID", "Identificador unico del cliente."),
+    ("Customer Status", "Estado del cliente: activo, churned, etc."),
+    ("Dependents", "Indica si el cliente tiene dependientes."),
+    ("Device Protection Plan", "Indica si contrato proteccion de dispositivos."),
+    ("Gender", "Genero del cliente."),
+    ("Internet Service", "Indica si tiene servicio de internet."),
+    ("Internet Type", "Tipo de conexion a internet."),
+    ("Lat Long", "Coordenadas geograficas combinadas."),
+    ("Latitude", "Latitud de la ubicacion del cliente."),
+    ("Longitude", "Longitud de la ubicacion del cliente."),
+    ("Married", "Indica si el cliente esta casado."),
+    ("Monthly Charge", "Cargo mensual del servicio."),
+    ("Multiple Lines", "Indica si tiene multiples lineas telefonicas."),
+    ("Number of Dependents", "Cantidad de dependientes."),
+    ("Number of Referrals", "Cantidad de referidos realizados por el cliente."),
+    ("Offer", "Oferta o promocion asociada al cliente."),
+    ("Online Backup", "Indica si tiene respaldo online."),
+    ("Online Security", "Indica si tiene seguridad online."),
+    ("Paperless Billing", "Indica si usa facturacion sin papel."),
+    ("Partner", "Indica si tiene pareja."),
+    ("Payment Method", "Metodo de pago utilizado."),
+    ("Phone Service", "Indica si tiene servicio telefonico."),
+    ("Population", "Poblacion de la zona del cliente."),
+    ("Premium Tech Support", "Indica si tiene soporte tecnico premium."),
+    ("Quarter", "Trimestre de referencia del registro."),
+    ("Referred a Friend", "Indica si refirio a un amigo."),
+    ("Satisfaction Score", "Puntaje de satisfaccion del cliente."),
+    ("Senior Citizen", "Indica si el cliente es adulto mayor."),
+    ("State", "Estado o provincia del cliente."),
+    ("Streaming Movies", "Indica si usa streaming de peliculas."),
+    ("Streaming Music", "Indica si usa streaming de musica."),
+    ("Streaming TV", "Indica si usa streaming de TV."),
+    ("Tenure in Months", "Antiguedad del cliente en meses."),
+    ("Total Charges", "Cargos totales acumulados."),
+    ("Total Extra Data Charges", "Cargos acumulados por datos extra."),
+    ("Total Long Distance Charges", "Cargos acumulados por larga distancia."),
+    ("Total Refunds", "Reembolsos totales recibidos."),
+    ("Total Revenue", "Ingresos totales generados por el cliente."),
+    ("Under 30", "Indica si el cliente tiene menos de 30 anos."),
+    ("Unlimited Data", "Indica si tiene plan de datos ilimitados."),
+    ("Zip Code", "Codigo postal del cliente."),
+]
+
+data_dictionary = pd.DataFrame(column_descriptions, columns=["columna", "descripcion"])
+data_dictionary
+
+# %% [markdown]
 # ## Variable target: Churn
 
 # %%
