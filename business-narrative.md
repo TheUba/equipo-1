@@ -8,7 +8,7 @@ Cada mes, un grupo de clientes deja de usar el servicio sin previo aviso. Para c
 
 Sin un sistema de alerta temprana, la empresa opera a ciegas sobre el 26% de su base de clientes que esta en riesgo de abandonar el servicio. Cada cliente perdido representa no solo el ingreso mensual que deja de entrar, sino el costo de adquirir un cliente nuevo para reemplazarlo — que en telecomunicaciones puede ser entre 5 y 7 veces mas caro que retener al existente.
 
-Hoy, si no se hace nada, la unica estrategia es asumir que ningun cliente se va a ir. Esa estrategia "acierta" el 73% de las veces simplemente porque la mayoria de los clientes se quedan — pero no detecta ni un solo cliente en riesgo. El 100% de los abandonos pasa desapercibido hasta que ya es tarde.
+Hoy, si no se hace nada, la unica estrategia es asumir que ningun cliente se va a ir. Esa estrategia no detecta ni un solo cliente en riesgo. El 100% de los abandonos pasa desapercibido hasta que ya es tarde.
 
 ## La solucion
 
@@ -31,9 +31,7 @@ Basados en el analisis de mas de 7,000 clientes reales:
 |---|---|
 | Recall 91.07% | De cada 10 clientes que se van, el sistema detecta 9 antes de que ocurra |
 | Precision 96.23% | De cada 10 alertas de riesgo, entre 9 y 10 son clientes que realmente se van a ir |
-| Accuracy 96.69% | De cada 100 evaluaciones que hace el sistema, casi 97 son correctas |
-| AUC 0.988 | El sistema distingue con alta confianza entre clientes que se quedan y los que se van |
-| Baseline 73.49% | Sin el sistema, la unica opcion es asumir que nadie se va — y perder al 100% de los que si se van |
+| Baseline (0% recall) | Sin el sistema, no se detecta a ninguno de los clientes que se van |
 
 ## Cimientos necesarios
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prediccion de abandono de clientes en una empresa de telecomunicaciones mediante clasificacion binaria con Random Forest, logrando 96.7% de accuracy y 91% de recall sobre la clase de churn.
+Prediccion de abandono de clientes en una empresa de telecomunicaciones mediante clasificacion binaria con Random Forest, logrando 96.23% de precision y 91.07% de recall sobre la clase de churn.
 
 ## Tipo de problema
 
@@ -50,37 +50,34 @@ Random Forest (100 estimadores) con one-hot encoding para variables categoricas 
 
 - Captura relaciones no lineales entre features sin requerir escalado
 - Provee feature importance nativa, lo cual es clave para comunicar al negocio POR QUE un cliente esta en riesgo
-- Performance superior a Regresion Logistica en este caso (+0.7% accuracy, +2.2% precision, +0.4% recall)
+- Performance superior a Regresion Logistica en este caso (+2.2% precision, +0.4% recall)
 - Robusto ante features irrelevantes y outliers
 
 ### Alternativas descartadas
 
-- **Regresion Logistica**: se evaluo como segundo baseline. Accuracy 95.98%, Precision 93.98%, Recall 90.63%. Buenos resultados y mas interpretable, pero Random Forest fue ligeramente superior en todas las metricas. En un escenario donde la interpretabilidad sea critica, Regresion Logistica seria una alternativa valida.
+- **Regresion Logistica**: se evaluo como segundo baseline. Precision 93.98%, Recall 90.63%. Buenos resultados y mas interpretable, pero Random Forest fue ligeramente superior en ambas metricas. En un escenario donde la interpretabilidad sea critica, Regresion Logistica seria una alternativa valida.
 - **Gradient Boosting / XGBoost**: no se evaluo en esta iteracion. Seria el siguiente paso si se necesita exprimir mas performance, pero la mejora marginal probablemente no justifique la complejidad adicional dado los resultados actuales.
 
 ## Metricas y resultados
 
 ### Baseline
 
-Clasificador dummy que siempre predice la clase mayoritaria (no-churn): 73.49% accuracy, 0% recall en churn. Esto representa "no hacer nada" — asumir que ningun cliente se va.
+Clasificador dummy que siempre predice la clase mayoritaria (no-churn): 0% recall en churn. Esto representa "no hacer nada" — asumir que ningun cliente se va.
 
 ### Metricas de evaluacion
 
-- **Accuracy**: proporcion total de predicciones correctas
 - **Precision (Churn)**: de los que el modelo marca como riesgo, cuantos realmente se van
 - **Recall (Churn)**: de los que realmente se van, cuantos detecta el modelo
-- **F1 (Churn)**: media armonica de precision y recall
-- **AUC**: capacidad del modelo de distinguir entre clases
 
 Se priorizo el recall por sobre la precision: en churn, es mejor alertar de mas (falso positivo = llamar a un cliente que estaba bien) que dejar pasar un cliente que se va (falso negativo = perder revenue).
 
 ### Resultados obtenidos
 
-| Modelo | Accuracy | Precision (Churn) | Recall (Churn) | F1 (Churn) | AUC |
-|---|---|---|---|---|---|
-| Baseline (siempre no-churn) | 73.49% | 0.00% | 0.00% | 0.00% | 0.500 |
-| Regresion Logistica | 95.98% | 93.98% | 90.63% | 92.27% | 0.994 |
-| Random Forest | 96.69% | 96.23% | 91.07% | 93.58% | 0.988 |
+| Modelo | Precision (Churn) | Recall (Churn) |
+|---|---|---|
+| Baseline (siempre no-churn) | 0.00% | 0.00% |
+| Regresion Logistica | 93.98% | 90.63% |
+| Random Forest | 96.23% | 91.07% |
 
 ## Limitaciones y supuestos
 
