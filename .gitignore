@@ -67,6 +67,8 @@ venv.bak/
 # Jupyter Notebooks (versionamos solo el .py via Jupytext)
 *.ipynb
 .ipynb_checkpoints/
+.jupyter_ystore.db
+.jupyter/
 
 # IPython
 profile_default/
