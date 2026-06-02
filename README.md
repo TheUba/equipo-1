@@ -102,12 +102,34 @@ uv sync
 ```
 
 ## Como levantar el proyecto
+Existen dos alternativas.
 
-### Abrir notebooks con Jupyter Notebook
+### A. Abrir notebooks con Jupyter Notebook
 
 ```bash
-uv run jupyter notebook notebooks/ --ServerApp.port=12001
+uv run jupyter notebook . \
+  --ip=0.0.0.0 \
+  --ServerApp.port=12001 \
+  --ServerApp.port_retries=0 \
+  --IdentityProvider.token='demo-token'
 ```
+
+### B. Abrir notebooks con JupyterLab
+
+```bash
+uv run jupyter lab . \
+  --ip=0.0.0.0 \
+  --ServerApp.port=12001 \
+  --ServerApp.port_retries=0 \
+  --IdentityProvider.token='demo-token'
+```
+
+Ambos comandos levantan el mismo servidor Jupyter. Se puede cambiar manualmente entre interfaces desde la URL:
+
+- `http://127.0.0.1:12001/tree`
+- `http://127.0.0.1:12001/lab`
+
+Usar `--ip=0.0.0.0` permite conexiones desde otras maquinas de la misma red. No usar token vacio en redes compartidas: Jupyter permite ejecutar codigo en la maquina host.
 
 ## Flujo de trabajo recomendado
 
