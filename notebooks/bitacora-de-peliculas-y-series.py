@@ -14,4 +14,10 @@
 # ---
 
 # %% [markdown]
-# # Este notebook va a tener una lista de peliculas y series
+# ## TERMINATOR
+#
+# - Tipo: Pelicula
+# - Género: Ciencia Ficcion
+# - Año de estreno: 1989
+# - Reseña: Pelicula de del futuro inmediato con IA aplicada 2026.
+#
