@@ -15,3 +15,12 @@
 
 # %% [markdown]
 # # Este notebook va a tener una lista de peliculas y series
+
+# %% [markdown]
+# El señor de los anillos
+#
+# - Tipo: pelicula
+# - Género: Fantasia
+# - Año de estreno: 2001 .
+# - Reseña: Trilogia .
+#
