@@ -14,4 +14,13 @@
 # ---
 
 # %% [markdown]
+# ## Scary Movie 
+#
+# - Tipo: pelicula
+# - Género: comedia
+# - Año de estreno:2026
+# - Reseña: parodias de peliculas .
+#
+
+# %% [markdown]
 # # Este notebook va a tener una lista de peliculas y series
