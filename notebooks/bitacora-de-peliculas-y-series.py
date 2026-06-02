@@ -15,3 +15,12 @@
 
 # %% [markdown]
 # # Este notebook va a tener una lista de peliculas y series
+
+# %% [markdown]
+#  HOMBRES DE NEGRO
+#
+# - Tipo: pelicula
+# - Género: comedia
+# - Año de estreno: 2005
+# - Reseña: dos agentes (agente blanco y el doctor negro) de una organizacion secreta impiden una invasion del malevolo cucarachon.
+#
