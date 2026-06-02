@@ -15,3 +15,12 @@
 
 # %% [markdown]
 # # Este notebook va a tener una lista de peliculas y series
+
+# %%
+## Mulan
+
+- Tipo: Pelicula
+- Género: animacion 
+- Año de estreno: 1998
+- Reseña: una pelicula de animacion, accion y aventuras.
+
