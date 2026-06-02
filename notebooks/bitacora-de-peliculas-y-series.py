@@ -15,3 +15,11 @@
 
 # %% [markdown]
 # # Este notebook va a tener una lista de peliculas y series
+
+# %% [markdown]
+# ## Clueless
+#
+# - Tipo: película
+# - Género: comedia/romance
+# - Año de estreno: 1995
+# - Reseña: comedia adolescente brillante que adapta con maestría la novela Emma de Jane Austen al Beverly Hills de los años 90.
