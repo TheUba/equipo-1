@@ -17,4 +17,8 @@
 # # Este notebook va a tener una lista de peliculas y series
 
 # %% [markdown]
-# Hola
+# - Tipo: Pelicula
+# - Género: Dibujo Animado
+# - Año de estreno: 2006
+# - Reseña: Una pelicula donde el fantasma persigue al pacman.
+# - Actores: Pacman, Fantasma.
