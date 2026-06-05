@@ -14,6 +14,15 @@
 # ---
 
 # %% [markdown]
+
+# ## TERMINATOR
+#
+# - Tipo: Pelicula
+# - Género: Ciencia Ficcion
+# - Año de estreno: 1989
+# - Reseña: Pelicula de del futuro inmediato con IA aplicada 2026.
+# - Actor: Arnold Schwarzenegger
+
 # # Este notebook va a tener una lista de peliculas y series
 
 # %% [markdown]
