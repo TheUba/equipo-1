@@ -18,7 +18,7 @@
 
 # %% [markdown]
 # - Tipo: Pelicula
-# - Género: Dibujo Animado
-# - Año de estreno: 2006
-# - Reseña: Una pelicula donde el fantasma persigue al pacman.
-# - Actores: Pacman, Fantasma.
+# - Género: Ciencia Ficción.
+# - Año de estreno: 2021
+# - Reseña: Una pelicula inspirada en su videojuego.
+# - Actores: Sub-Zero, Liu Kang, Kung Lao, Barraka, Shao Kang, Scorpion, Kitana, Sindel, Goro, Milena, Jonny Cage, Sonia Blade.
