@@ -17,8 +17,10 @@
 # # Este notebook va a tener una lista de peliculas y series
 
 # %% [markdown]
-# - Tipo: Pelicula
-# - Género: Ciencia Ficción.
-# - Año de estreno: 2021
+# - Tipo: Pelicula.
+# - Género: Ciencia Ficción - Acción.
+# - Año de estreno: 2021.
 # - Reseña: Una pelicula inspirada en su videojuego.
-# - Actores: Sub-Zero, Liu Kang, Kung Lao, Barraka, Shao Kang, Scorpion, Kitana, Sindel, Goro, Milena, Jonny Cage, Sonia Blade.
+# - Personajes: Sub-Zero, Liu Kang, Kung Lao, Barraka, Shao Kang, Scorpion, Kitana, Sindel, Goro, Milena, Jonny Cage, Sonia Blade.
+# - Doblaje: Español Latino, Español Gallego, Japones, Chino Mandarin, Ingles, Frances, Portugues, Indú.
+# - Actores: Lewis Tan, Jessica McNamee, Josh Lawson, Joe Taslim, Hiroyuki Sanada, Ludi Lin.
