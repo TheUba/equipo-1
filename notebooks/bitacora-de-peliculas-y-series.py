@@ -23,4 +23,4 @@
 # - Género: comedia
 # - Año de estreno: no se
 # - Reseña: dos amigos que viajan.
-#
+# - Actores: No se
