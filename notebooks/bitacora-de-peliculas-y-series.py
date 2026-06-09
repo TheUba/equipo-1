@@ -17,6 +17,15 @@
 # # Este notebook va a tener una lista de peliculas y series
 
 # %% [markdown]
+#  HOMBRES DE NEGRO
+#
+# - Tipo: pelicula
+# - Duracion: 1h 30min
+# - Género: comedia
+# - Año de estreno: 2007
+# - Reseña: dos agentes (agente blanco y el doctor negro) de una organizacion secreta impiden una invasion del malevolo cucarachon.
+#
+
 # ## TERMINATOR
 #
 # - Tipo: Pelicula
