@@ -25,3 +25,38 @@
 # - Año de estreno: 2007
 # - Reseña: dos agentes (agente blanco y el doctor negro) de una organizacion secreta impiden una invasion del malevolo cucarachon.
 #
+
+# ## TERMINATOR
+#
+# - Tipo: Pelicula
+# - Género: Ciencia Ficcion
+# - Año de estreno: 1989
+# - Reseña: Pelicula de del futuro inmediato con IA aplicada 2026.
+# - Actor: Arnold Schwarzenegger
+
+# %% [markdown]
+# ## Tonto y retonto
+#
+# - Tipo: pelicula
+# - Género: comedia
+# - Año de estreno: no se
+# - Reseña: dos amigos que viajan.
+# - Actores: No se
+
+# %% [markdown]
+# ## Clueless
+#
+# - Tipo: película
+# - Género: comedia/romance
+# - Año de estreno: 1995
+# - Reseña: comedia adolescente brillante que adapta con maestría la novela Emma de Jane Austen al Beverly Hills de los años 90.
+# - Director: Amy Heckerling
+
+# %% [markdown]
+# ## Los simpsons
+#
+# - Tipo: serie
+# - Género: comedia
+# - Año de estreno: no se
+# - Reseña: parodia de familia yankee.
+# - Actores: No se
